@@ -13,7 +13,8 @@ def partition(lst,l,h):
             j-=1
         if i<j:
             lst[i],lst[j]=lst[j],lst[i]
-
+            
+    lst[pivot],lst[j]=lst[j],lst[pivot]
     return j
         
 def quick_sort(lst,l,h):
